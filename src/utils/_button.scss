@@ -1,0 +1,23 @@
+button {
+    @extend %btn-base;
+    border-style: solid;
+    border-color: $btn-border-col;
+    background: $btn-col;
+    transition: $btn-trasision;
+    
+    &:hover {
+        border-color: $btn-border-col-active;
+        background: $btn-col-mouseHover;
+    }
+
+    &:disabled {
+        border-color: $btn-border-col-disable;
+        background: $btn-col-disable;
+    }
+
+    &[highlight] {
+        outline: 1px $btn-border-col-active;
+        border-width: 2px;
+        border-color: $btn-border-col-active;
+    }
+}

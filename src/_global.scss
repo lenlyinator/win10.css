@@ -1,0 +1,9 @@
+.W10UI {
+    text-rendering: optimizeSpeed;
+    box-sizing: border-box;
+    button {
+        &.default-padding {
+            padding: auto;
+        }
+    }
+}
