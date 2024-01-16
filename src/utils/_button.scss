@@ -1,5 +1,7 @@
 button {
     @extend %btn-base;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
     border-style: solid;
     border-color: $btn-border-col;
     background: $btn-col;
