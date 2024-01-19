@@ -1,4 +1,18 @@
 // | -- | Base | -- |
+$base-col-1: #fff;
+
+$btn-col: #e1e1e1;
+$btn-col-mouseHover: #e5f1fb;
+$btn-col-disable: #ccc;
+$btn-border-col: #adadad;
+$btn-border-col-highlight: #0078d7;
+$btn-border-col-disable: #bfbfbf;
+$btn-border-col-active: #cce4f7;
+$btn-trasision: .7s;
+
+$window-border-col: #d9d9d9;
+$window-outline: #f0f0f0;
+
 %btn-base {
     outline: none;
     border-width: 1px;

@@ -1,9 +1,5 @@
-.W10UI {
-    .window {
-        .title-bar {
-            &-text {
-                text-align: left;
-            }
-        }
-    }
+.title-bar {
+    // background: $base-col-1;
+    font-family: Arial, sans-serif;
+    background: red;
 }

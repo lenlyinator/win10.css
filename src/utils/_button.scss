@@ -8,8 +8,12 @@ button {
     transition: $btn-trasision;
     
     &:hover {
-        border-color: $btn-border-col-active;
+        border-color: $btn-border-col-highlight;
         background: $btn-col-mouseHover;
+    }
+
+    &:active {
+        background: $btn-border-col-active;
     }
 
     &:disabled {
@@ -17,9 +21,16 @@ button {
         background: $btn-col-disable;
     }
 
-    &[highlight] {
-        outline: 1px $btn-border-col-active;
+    .highlight {
+        outline: 1px $btn-border-col-highlight;
         border-width: 2px;
-        border-color: $btn-border-col-active;
+        border-color: $btn-border-col-highlight;
+    }
+
+    .focused {
+        border-width: 2px;
+        border-color: $btn-border-col-highlight;
+        outline: 1px dashed #000;
+        outline-offset: -2.5px;
     }
 }
