@@ -9,7 +9,7 @@ button {
     
     &:hover {
         border-color: $btn-border-col-highlight;
-        background: $btn-col-mouseHover;
+        background: $btn-mouseHover-col;
     }
 
     &:active {
@@ -18,7 +18,7 @@ button {
 
     &:disabled {
         border-color: $btn-border-col-disable;
-        background: $btn-col-disable;
+        background: $btn-disable-col;
     }
 
     .highlight {

@@ -1,7 +1,24 @@
 .title-bar {
-    // background: $base-col-1;
-    background: red;
+    background: $base-col-light-1;
+    border: 1px solid $window-border-col;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
     &-text {
+        margin: 0;
+        padding: 7px;
         font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    &-controls {
+        button {
+            border: none;
+            &[aria-label=Close] {
+                background: url('../src/assets/Close_black.PNG');
+            }
+        }
     }
 }
