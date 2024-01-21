@@ -1,5 +1,7 @@
 .title-bar {
     // background: $base-col-1;
-    font-family: Arial, sans-serif;
     background: red;
+    &-text {
+        font-family: Arial, sans-serif;
+    }
 }
