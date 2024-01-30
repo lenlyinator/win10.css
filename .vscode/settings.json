@@ -1,3 +1,5 @@
 {
     "explorer.compactFolders": false,
+    "editor.fontSize": 16.5,
+    "editor.tabSize": 4,
 }

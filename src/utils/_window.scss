@@ -14,11 +14,19 @@
     }
 
     &-controls {
-        button {
-            border: none;
-            &[aria-label=Close] {
-                background: url('../src/assets/Close_black.PNG');
-            }
+        // button {
+        //     border: none;
+        //     &[aria-label=Close] {
+        //         background: red;
+        //     }
+
+        //     .squared {
+        //         /* soon */
+        //     }
+        // }
+
+        @include control-btn-type("Close") {
+            background: red;
         }
     }
 }
