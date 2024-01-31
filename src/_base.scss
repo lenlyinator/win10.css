@@ -25,8 +25,6 @@ $btn-control-col-test: (
     ),
 );
 
-// @debug map.get($btn-control-col-test, "hover", "red-col");
-
 // base for common button
 %btn-base {
     outline: none;
@@ -36,28 +34,24 @@ $btn-control-col-test: (
 }
 
 // The base for the button on title bar
-@mixin control-btn-base($width, $height) {
+@mixin control-btn-base($height) {
     @content;
-    width: $width;
     height: $height;
 
     padding: 0;
     border: none;
     outline: none;
     transition: .3s
-
-    // @debug "width: #{width} ; $height: #{$height}";
 }
 
 // $btn-label will have a aria-label value
 @mixin control-btn-type($btn-label) {
 
     button[aria-label=#{$btn-label}] {
-        @include control-btn-base(75px, 50px);
+        @include control-btn-base(29px);
+        min-width: 45px;
         @content;
     }
-
-    // @debug "$btn-label: #{$btn-label}";
 }
 
 // style for control button
@@ -70,6 +64,6 @@ $btn-control-col-test: (
 
     &:active {
         background: map.get($btn-control-col-test, "active", $active-col);            
-        -webkit-transition: none;
+        transition: none;
     }
 };

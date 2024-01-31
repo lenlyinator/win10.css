@@ -1,36 +1,41 @@
-.title-bar {
-    background: $base-col-light-1;
+.window {
+    font-family: Arial, sans-serif;
     border: 1px solid $window-border-col;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    &-text {
-        margin: 0;
-        padding: 7px;
-        font-family: Arial, sans-serif;
-        font-size: 15px;
-        font-weight: normal;
-    }
-
-    &-controls {
+    .title-bar {
+        background: $base-col-light-1;
         display: flex;
-        flex-direction: row-reverse;
-
-        @include control-btn-type("Close") {
-            @include control-btn-style("Close", "red-col", "red-col");
+        justify-content: space-between;
+        align-items: center;
+        height: 29px;
+        
+        &-text {
+            margin: 0;
+            padding-left: 7px;
+            font-size: 15px;
+            font-weight: normal;
         }
-
-        @include control-btn-type("Maximize") {
-            @include control-btn-style("Maximize", "white-col", "white-col");
+    
+        &-controls {
+            display: flex;
+    
+            @include control-btn-type("Close") {
+                @include control-btn-style("Close", "red-col", "red-col");
+            }
+    
+            @include control-btn-type("Maximize") {
+                @include control-btn-style("Maximize", "white-col", "white-col");
+            }
+    
+            @include control-btn-type("Minimize") {
+                @include control-btn-style("Minimize", "white-col", "white-col");
+            }
+    
+            @include control-btn-type("Restore") {
+                @include control-btn-style("Restore", "white-col", "white-col");
+            }
         }
-
-        @include control-btn-type("Minimize") {
-            @include control-btn-style("Minimize", "white-col", "white-col");
-        }
-
-        @include control-btn-type("Restore") {
-            @include control-btn-style("Restore", "white-col", "white-col");
-        }
+    }
+    &-body {
+        margin: 7px;
     }
 }
