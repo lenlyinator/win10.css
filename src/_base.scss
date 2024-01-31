@@ -10,21 +10,22 @@ $btn-trasision: .7s;
 $window-border-col: #707070;
 $window-outline: #f0f0f0;
 
-$btn-control-col: (
+// temp
+$btn-control-col-test: (
     "all": #fff,
 
     "hover": (
-        "close": #e81123,
-        "normal": #e5e5e5
+        "red-col": #e81123,
+        "white-col": #e5e5e5
     ),
 
     "active": (
-        "close": #f1707a,
-        "normal": #cacacb
+        "red-col": #f1707a,
+        "white-col": #cacacb
     ),
 );
 
-@debug $btn-control-col;
+// @debug map.get($btn-control-col-test, "hover", "red-col");
 
 // base for common button
 %btn-base {
@@ -43,6 +44,7 @@ $btn-control-col: (
     padding: 0;
     border: none;
     outline: none;
+    transition: .3s
 
     // @debug "width: #{width} ; $height: #{$height}";
 }
@@ -51,7 +53,7 @@ $btn-control-col: (
 @mixin control-btn-type($btn-label) {
 
     button[aria-label=#{$btn-label}] {
-        @include control-btn-base(50px, 50px);
+        @include control-btn-base(75px, 50px);
         @content;
     }
 

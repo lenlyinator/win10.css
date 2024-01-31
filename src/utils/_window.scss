@@ -14,19 +14,63 @@
     }
 
     &-controls {
-        // button {
-        //     border: none;
-        //     &[aria-label=Close] {
-        //         background: red;
-        //     }
+        display: flex;
+        flex-direction: row-reverse;
 
-        //     .squared {
-        //         /* soon */
-        //     }
-        // }
-
+        // Close btn
         @include control-btn-type("Close") {
-            background: red;
+            background: map.get($btn-control-col-test, "all");
+            
+            &:hover {
+                background: map.get($btn-control-col-test, "hover", "red-col");
+            }
+
+            &:active {
+                background: map.get($btn-control-col-test, "active", "red-col");
+                -webkit-transition: none;
+            }
+        }
+
+        // Maximize btn
+        @include control-btn-type("Maximize") {
+            background: map.get($btn-control-col-test, "all");
+            
+            &:hover {
+                background: map.get($btn-control-col-test, "hover", "white-col");
+            }
+
+            &:active {
+                background: map.get($btn-control-col-test, "active", "white-col");
+                -webkit-transition: none;
+            }
+        }
+
+        // Minimize btn
+        @include control-btn-type("Minimize") {
+            background: map.get($btn-control-col-test, "all");
+            
+            &:hover {
+                background: map.get($btn-control-col-test, "hover", "white-col");
+            }
+
+            &:active {
+                background: map.get($btn-control-col-test, "active", "white-col");
+                -webkit-transition: none;
+            }
+        }
+
+        // Restore btn
+        @include control-btn-type("Restore") {
+            background: map.get($btn-control-col-test, "all");
+            
+            &:hover {
+                background: map.get($btn-control-col-test, "hover", "white-col");
+            }
+
+            &:active {
+                background: map.get($btn-control-col-test, "active", "white-col");
+                -webkit-transition: none;
+            }
         }
     }
 }
