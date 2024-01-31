@@ -17,60 +17,20 @@
         display: flex;
         flex-direction: row-reverse;
 
-        // Close btn
         @include control-btn-type("Close") {
-            background: map.get($btn-control-col-test, "all");
-            
-            &:hover {
-                background: map.get($btn-control-col-test, "hover", "red-col");
-            }
-
-            &:active {
-                background: map.get($btn-control-col-test, "active", "red-col");
-                -webkit-transition: none;
-            }
+            @include control-btn-style("Close", "red-col", "red-col");
         }
 
-        // Maximize btn
         @include control-btn-type("Maximize") {
-            background: map.get($btn-control-col-test, "all");
-            
-            &:hover {
-                background: map.get($btn-control-col-test, "hover", "white-col");
-            }
-
-            &:active {
-                background: map.get($btn-control-col-test, "active", "white-col");
-                -webkit-transition: none;
-            }
+            @include control-btn-style("Maximize", "white-col", "white-col");
         }
 
-        // Minimize btn
         @include control-btn-type("Minimize") {
-            background: map.get($btn-control-col-test, "all");
-            
-            &:hover {
-                background: map.get($btn-control-col-test, "hover", "white-col");
-            }
-
-            &:active {
-                background: map.get($btn-control-col-test, "active", "white-col");
-                -webkit-transition: none;
-            }
+            @include control-btn-style("Minimize", "white-col", "white-col");
         }
 
-        // Restore btn
         @include control-btn-type("Restore") {
-            background: map.get($btn-control-col-test, "all");
-            
-            &:hover {
-                background: map.get($btn-control-col-test, "hover", "white-col");
-            }
-
-            &:active {
-                background: map.get($btn-control-col-test, "active", "white-col");
-                -webkit-transition: none;
-            }
+            @include control-btn-style("Restore", "white-col", "white-col");
         }
     }
 }

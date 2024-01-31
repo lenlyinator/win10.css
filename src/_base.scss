@@ -60,3 +60,16 @@ $btn-control-col-test: (
     // @debug "$btn-label: #{$btn-label}";
 }
 
+// style for control button
+@mixin control-btn-style($type, $hover-col, $active-col) {
+    background: map.get($btn-control-col-test, "all");
+
+    &:hover {
+        background: map.get($btn-control-col-test, "hover", $hover-col);        
+    }
+
+    &:active {
+        background: map.get($btn-control-col-test, "active", $active-col);            
+        -webkit-transition: none;
+    }
+};
