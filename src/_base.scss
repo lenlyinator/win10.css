@@ -10,21 +10,6 @@ $btn-trasision: .7s;
 $window-border-col: #707070;
 $window-outline: #f0f0f0;
 
-// temp
-$btn-control-col-test: (
-    "all": #fff,
-
-    "hover": (
-        "red-col": #e81123,
-        "white-col": #e5e5e5
-    ),
-
-    "active": (
-        "red-col": #f1707a,
-        "white-col": #cacacb
-    ),
-);
-
 // base for common button
 %btn-base {
     outline: none;
@@ -50,20 +35,7 @@ $btn-control-col-test: (
     button[aria-label=#{$btn-label}] {
         @include control-btn-base(29px);
         min-width: 45px;
+        background-size: 45px 29px !important;
         @content;
     }
 }
-
-// style for control button
-@mixin control-btn-style($type, $hover-col, $active-col) {
-    background: map.get($btn-control-col-test, "all");
-
-    &:hover {
-        background: map.get($btn-control-col-test, "hover", $hover-col);        
-    }
-
-    &:active {
-        background: map.get($btn-control-col-test, "active", $active-col);            
-        transition: none;
-    }
-};
