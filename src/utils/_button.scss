@@ -1,5 +1,6 @@
 button {
     @extend %btn-base;
+    
     font-family: 'Arial', sans-serif;
     font-size: 12px;
     border-style: solid;
@@ -9,7 +10,7 @@ button {
     
     &:hover {
         border-color: $btn-border-col-highlight;
-        background: $btn-col-mouseHover;
+        background: $btn-mouseHover-col;
     }
 
     &:active {
@@ -18,7 +19,7 @@ button {
 
     &:disabled {
         border-color: $btn-border-col-disable;
-        background: $btn-col-disable;
+        background: $btn-disable-col;
     }
 
     .highlight {

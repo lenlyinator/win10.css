@@ -1,21 +1,41 @@
-// | -- | Base | -- |
-$base-col-1: #fff;
-
 $btn-col: #e1e1e1;
-$btn-col-mouseHover: #e5f1fb;
-$btn-col-disable: #ccc;
+$btn-mouseHover-col: #e5f1fb;
+$btn-disable-col: #ccc;
 $btn-border-col: #adadad;
 $btn-border-col-highlight: #0078d7;
 $btn-border-col-disable: #bfbfbf;
 $btn-border-col-active: #cce4f7;
 $btn-trasision: .7s;
 
-$window-border-col: #d9d9d9;
+$window-border-col: #707070;
 $window-outline: #f0f0f0;
 
+// base for common button
 %btn-base {
     outline: none;
     border-width: 1px;
     min-width: 75px;
     padding: 2px 6px;
+}
+
+// The base for the button on title bar
+@mixin control-btn-base($height) {
+    @content;
+    height: $height;
+
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: .3s
+}
+
+// $btn-label will have a aria-label value
+@mixin control-btn-type($btn-label) {
+
+    button[aria-label=#{$btn-label}] {
+        @include control-btn-base(29px);
+        min-width: 45px;
+        background-size: 45px 29px !important;
+        @content;
+    }
 }

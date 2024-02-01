@@ -1,17 +1,15 @@
-// | -- | Fonts | -- |
-
 @font-face {
     font-family: 'Segoe UI';
-    src: url('fonts/woff2/SegoeUI-Bold.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-BoldItalic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-Italic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-Light.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-LightItalic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-Semibold.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-SemiboldItalic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-Semilight.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI-SemilightItalic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUI.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUIBlack-Italic.woff2') format('woff2'),
-         url('fonts/woff2/SegoeUIBlack.woff2') format('woff2');
+    src: url('./fonts/woff2/SegoeUI-Bold.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-BoldItalic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-Italic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-Light.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-LightItalic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-Semibold.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-SemiboldItalic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-Semilight.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI-SemilightItalic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUI.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUIBlack-Italic.woff2') format('woff2'),
+         url('./fonts/woff2/SegoeUIBlack.woff2') format('woff2');
 }
