@@ -13,3 +13,11 @@
          url('./fonts/woff2/SegoeUIBlack-Italic.woff2') format('woff2'),
          url('./fonts/woff2/SegoeUIBlack.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: "Consolas";
+    src: url('./fonts/woff2/consola.woff2') format('woff2'),
+         url('./fonts/woff2/consolab.woff2') format('woff2'),
+         url('./fonts/woff2/consolai.woff2') format('woff2'),
+         url('./fonts/woff2/consolaz.woff2') format('woff2');
+}

@@ -74,5 +74,12 @@ $btn-control-ico: (
     }
     &-body {
         margin: 7px;
+        pre {
+            margin: -7px;
+            background: $window-pre-col;
+            color: $window-pre-text-col;
+            font-size: 16px;
+            white-space: unset;
+        }
     }
 }

@@ -1,0 +1,33 @@
+{
+  "name": "win10.css",
+  "version": "0.1.0-indev",
+  "description": "A CSS Framework help you create the modern UI like Windows 10",
+  "main": "src/main.scss",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/main.scss src/dist/win10.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenlyinator/win10.css.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "windows10",
+    "gui",
+    "moodern"
+  ],
+  "author": "lenlyinator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lenlyinator/win10.css/issues"
+  },
+  "homepage": "https://github.com/lenlyinator/win10.css#readme",
+  "import": {
+    "win10.css": "./src/dist/win10.css"
+  }
+}
