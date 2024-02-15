@@ -1,6 +1,6 @@
 {
   "name": "win10.css",
-  "version": "0.1.0-indev",
+  "version": "0.1.0-indev.2",
   "description": "A CSS Framework help you create the modern UI like Windows 10",
   "main": "src/main.scss",
   "directories": {
