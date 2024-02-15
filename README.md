@@ -1,17 +1,4 @@
-<style>
-    #info-temp {
-        border-radius: 10px;
-        background: rgba(0, 136, 248, 0.59);
-        padding: 25px 15px 9px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #info-h4-text {
-        font-weight: 700;
-    }
-</style>
+<link href="./readme-assets/style.css" rel="stylesheet"></link>
 
 <div id="info-temp">
     <p id="info-h4-text">Info</p>
