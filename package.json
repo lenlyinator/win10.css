@@ -19,7 +19,8 @@
     "framework",
     "windows10",
     "gui",
-    "modern"
+    "modern",
+    "metro"
   ],
   "author": "lenlyinator",
   "license": "MIT",
