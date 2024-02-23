@@ -1,0 +1,16 @@
+input[type="checkbox"] {
+    appearance: none;
+    background: none;
+    border: none;
+    margin: 0;
+    // opacity: 0;
+
+    &+label {
+        display: inline-flex;
+        align-items: center;
+        font-family: "Segoe UI", sans-serif;
+        margin-left: 0;
+        font-size: 9pt;
+        position: relative;
+    }
+}
